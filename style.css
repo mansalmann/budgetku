@@ -26,6 +26,10 @@ button{
     cursor: pointer;
 }
 
+.hidden{
+    display: none !important;
+}
+
 .container{
     max-width: 40rem;
     margin: 0 auto;
@@ -35,6 +39,8 @@ header h1{
     font-size: 3rem;
     color:#31509e;
 }
+
+/* Budget Section */
 
 .budget-section{
     display: grid;
@@ -69,6 +75,30 @@ header h1{
     color: #d9d9d9;
 }
 
+/* Budget Details */
+#budget-details .budget-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#budget-details .icon{
+    border: 1px solid #e0e0e06f;
+    aspect-ratio: 1/1;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    color: #e0e0e06f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#budget-details i{
+    font-size: 2rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .budget-section{
         padding: 1rem;
