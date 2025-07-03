@@ -22,6 +22,10 @@ header{
     padding: 6rem 0;
 }
 
+button{
+    cursor: pointer;
+}
+
 .container{
     max-width: 40rem;
     margin: 0 auto;
@@ -30,4 +34,44 @@ header{
 header h1{
     font-size: 3rem;
     color:#31509e;
+}
+
+.budget-section{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.budget-card{
+    background-color: #0f379ba8;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.budget-name{
+    font-size: 1.25rem;
+}
+
+.budget-amount{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.add-budget-button{
+    height: 6rem;
+    border-radius: 1.5rem;
+    background-color: transparent;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 2px dashed #d9d9d9;
+    color: #d9d9d9;
+}
+
+@media (max-width: 768px) {
+    .budget-section{
+        padding: 1rem;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
